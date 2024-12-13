@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rithan Print</title>
+    <link rel="icon" type="image/png" href="https://th.bing.com/th/id/R.270f8c7d9568f1a0992c45531ef3196d?rik=4L0st7uwUrkzDw&riu=http%3a%2f%2fpedroreina.net%2fsfd%2ffin%2fpato.jpg&ehk=CkUVW%2ftTvlO5nECk1Vdfh0%2fj4ne0o3zekwubVj%2fG0bY%3d&risl=&pid=ImgRaw&r=0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Tu Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Publicidad e Impresión Profesional</h1>
+        <p>Impresión de alta calidad en gran y pequeño formato.</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </section>
+    
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="https://th.bing.com/th/id/R.c128f902c1eb4869e009a75eac45446a?rik=lXYlGjkA3nXGzQ&riu=http%3a%2f%2fwww.grupocreativomacondo.com%2fsites%2fdefault%2ffiles%2fimages%2fimpresion-digital-gran-formato.jpg&ehk=nTNdx8ZEoXzFXdiH0jM69hnpYC9sw2iYwYG%2b3bPmVgo%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Gran Formato">
+                <h3>Gran Formato</h3>
+                <p>Impresión de banners, vinilos, espectaculares y más.</p>
+            </div>
+            <div class="service">
+                <img src="https://www.grafitex.es/wp-content/uploads/2023/04/Petit-format-16-9-min.jpg"
+                    alt="Pequeño Formato">
+                <h3>Pequeño Formato</h3>
+                <p>Tarjetas de presentación, folletos, catálogos y más.</p>
+            </div>
+            <div class="service">
+                <img src="https://static.mercadonegro.pe/wp-content/uploads/2020/08/07093158/dise%C3%B1o-grafico-publicitario.jpg"
+                    alt="Diseño de Publicidad">
+                <h3>Diseño de Publicidad</h3>
+                <p>Diseño gráfico creativo para destacar tu marca.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portafolio">
+        <h2>Portafolio Destacado</h2>
+        <p>Descubre algunos de nuestros proyectos más impresionantes.</p>
+        <div class="portfolio-cards">
+            <div class="portfolio-card">
+                <img src="IMG/banner.jpg" alt="Banner Publicitario">
+                <div class="card-content">
+                    <h3>Banner Publicitario</h3>
+                    <p>Alta calidad para destacar tu marca en gran formato.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="IMG/impresionars.jpg" alt="Folleto Promocional">
+                <div class="card-content">
+                    <h3>Folleto Promocional</h3>
+                    <p>Diseños atractivos que capturan la atención de tus clientes.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="IMG/prueba.jpg" alt="Espectacular">
+                <div class="card-content">
+                    <h3>Espectacular</h3>
+                    <p>Impresiones gigantes para impactar a tu audiencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¡Comencemos a solucionar tus dudas! Completa el formulario y nos pondremos en contacto contigo pronto.</p>
+        <form id="form">
+            <div class="field">
+                <label for="from_name">Nombre</label>
+                <input type="text" name="from_name" id="from_name">
+            </div>
+            <div class="field">
+                <label for="from_email">Email</label>
+                <input type="text" name="from_email" id="from_email">
+            </div>
+            <div class="field">
+                <label for="message">Mensaje</label>
+                <input type="text" name="message" id="message">
+            </div>
+
+            <input type="submit" id="button" value="Send Email">
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Publicidad e Impresión. Todos los derechos reservados.</p>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('1BGLi1w-qpev3fpTL')
+    </script>
+</body>
+
+</html>
